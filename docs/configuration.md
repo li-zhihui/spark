@@ -699,6 +699,21 @@ Apart from these, the following properties are also available, and may be useful
     (in milliseconds)
   </td>
 </tr>
+</tr>
+  <td><code>spark.scheduler.minRegisteredExecutorsRatio</code></td>
+  <td>0</td>
+  <td>
+    Submit tasks only after (registered executors / total expected executors)
+    is equal to at least this value, that is double between 0 and 1.
+  </td>
+</tr>
+<tr>
+  <td><code>spark.scheduler.maxRegisteredExecutorsWaitingTime</code></td>
+  <td>30000</td>
+  <td>
+    Whatever minRegisteredExecutorsRatio is arrived, submit tasks after the time(milliseconds).
+  </td>
+</tr>
 </table>
 
 #### Security
